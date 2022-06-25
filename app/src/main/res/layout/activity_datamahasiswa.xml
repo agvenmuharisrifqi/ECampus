@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Datamahasiswa"
+    android:background="#FFFAF0"
+    android:padding="40dp">
+
+    <LinearLayout
+        android:id = "@+id/headerListView"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:background = "#FFFF0000"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "1"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "NIM"
+            android:textColor = "#ffffff" />
+
+        <TextView
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_weight = "2"
+            android:gravity = "center"
+            android:padding = "5dp"
+            android:text = "NAMA"
+            android:textColor = "#ffffff"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnInputData"
+        android:layout_below="@+id/headerListView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-29dp">
+
+    </ListView>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/btnInputData"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Input Data"
+        android:drawableLeft="@drawable/ic_add_circle"
+        android:layout_marginBottom="30dp"
+        android:textSize="18sp"
+        android:textColor="#FF0000"
+        android:drawablePadding="5dp"
+        style="?android:borderlessButtonStyle"/>
+</RelativeLayout>

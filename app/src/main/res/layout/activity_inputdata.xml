@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inputdata"
+    android:padding="40dp"
+    android:background="#FFFAF0">
+
+    <TextView
+        android:id="@+id/textNim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NIM"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputNim"
+        android:drawableLeft="@drawable/ic_nim"
+        android:inputType="number"
+        android:maxLength="10"
+        android:drawablePadding="5dp"
+        android:layout_below="@+id/textNim"
+        android:layout_alignLeft="@id/textNim">
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:layout_below="@+id/inputNim"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textNama"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputNama"
+        android:layout_below="@id/textNama"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_name"
+        android:layout_alignLeft="@id/textNama"
+        android:inputType="text"
+        android:maxLength="20"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tanggal Lahir"
+        android:layout_below="@+id/inputNama"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textDate"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputDate"
+        android:layout_below="@id/textDate"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_date"
+        android:layout_alignLeft="@id/textDate"
+        android:inputType="date"
+        android:hint="1999-08-13"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:layout_below="@+id/inputDate"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textGender"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputGender"
+        android:layout_below="@id/textGender"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_gender"
+        android:layout_alignLeft="@id/textGender"
+        android:inputType="text"
+        android:maxLength="1"
+        android:hint="L atau P"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:layout_below="@+id/inputGender"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textAddress"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputAddress"
+        android:layout_below="@id/textAddress"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_address"
+        android:layout_alignLeft="@id/textAddress"
+        android:inputType="text"
+        android:maxLength="100"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSaveData"
+        android:layout_below="@id/inputAddress"
+        android:layout_alignParentRight="true"
+        android:text="SAVE"
+        android:textColor="#FF0000"
+        android:drawableLeft="@drawable/ic_save"
+        android:drawablePadding="5dp"
+        style="?android:borderlessButtonStyle"/>
+
+</RelativeLayout>

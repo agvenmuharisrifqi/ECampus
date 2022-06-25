@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ecampus" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ECampus" >
+        <activity
+            android:name=".DetailData"
+            android:exported="false"
+            android:theme="@style/Theme.ECampus"
+            android:label="Detail Data"/>
+        <activity
+            android:name=".UpdateData"
+            android:exported="false"
+            android:theme="@style/Theme.ECampus"
+            android:label="Update Data"/>
+        <activity
+            android:name=".Splashscreen"
+            android:exported="true"
+            android:label="Dashboard"
+            android:theme="@style/Theme.Spashscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="ECampus" />
+        <activity
+            android:name=".Informasi"
+            android:exported="false"
+            android:label="Informasi" />
+        <activity
+            android:name=".Inputdata"
+            android:exported="false"
+            android:label="Input Data" />
+        <activity
+            android:name=".Datamahasiswa"
+            android:exported="false"
+            android:label="Data Mahasiswa" />
+    </application>
+
+</manifest>

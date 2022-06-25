@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id = "@+id/relativeLayout1">
+
+    <TextView
+        android:id = "@+id/mNim"
+        android:layout_width = "0dp"
+        android:layout_height = "match_parent"
+        android:layout_weight = "1"
+        android:ellipsize = "end"
+        android:padding = "5dp"
+        android:text = "NIM"
+        android:singleLine = "true" />
+
+    <TextView
+        android:id = "@+id/mNama"
+        android:layout_width = "0dp"
+        android:layout_height = "match_parent"
+        android:layout_weight = "2"
+        android:ellipsize = "end"
+        android:padding = "5dp"
+        android:text = "NAMA"
+        android:singleLine = "true" />
+
+</LinearLayout>
